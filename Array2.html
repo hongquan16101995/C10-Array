@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //mảng 2 chiều
+  //khai báo
+  // let array1 = [[3,2,1],[4,5,6],[10,14,16]]
+  // console.log(array1)
+  // // console.log(array1[1][2])
+  //
+  // for (let i = 0; i < array1.length; i++) {
+  //     for (let j = 0; j < array1[i].length; j++) {
+  //         console.log(array1[i][j])
+  //     }
+  // }
+
+  //c2: từ khóa new
+  let array2 = new Array(5)
+  for (let i = 0; i < array2.length; i++) {
+      array2[i] = new Array(3)
+  }
+  console.log(array2)
+  for (let i = 0; i < array2.length; i++) {
+      for (let j = 0; j < array2[i].length; j++) {
+         array2[i][j] = "a"
+      }
+  }
+  console.log(array2)
+</script>
+</body>
+</html>

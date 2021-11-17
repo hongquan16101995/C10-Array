@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //arr = [1,2,3,3,4]
+    //inputNumber = 3
+    //=> arr = [1,2,4,0,0]
+
+    //isNaN(): trả về true khi giá trị truyền vào là chuỗi, false khi gtri truyền vào là số
+    let number = +prompt("Nhập vào số lượng phần tử: ")
+    let array = new Array(number)
+    for (let i = 0; i < array.length; i++) {
+        array[i] = +prompt("Nhập phần tử thứ " + (i + 1) + " : ")
+    }
+
+    let numberInput = +prompt("Nhập vào giá trị muốn kiểm tra: ")
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === numberInput) {
+            array.splice(i,1)
+            array.push(0)
+            i--
+            // for (let j = i; j < array.length - 1; j++) {
+            //     array[j] = array[j + 1]
+            // }
+            // array[array.length - 1] = 0
+            // i--
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let string = "abc-----"
+  let arr = string.split("")
+  console.log(arr)
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] === "-"){
+        arr[i] = "_"
+    }
+  }
+  console.log(arr)
+  console.log(string)
+  console.log(arr.join(""))
+</script>
+</body>
+</html>

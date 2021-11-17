@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img style="width: 100px; height: 200px; position: relative; left: 0; top: 100px" id="image"
+     src="https://vcdn1-dulich.vnecdn.net/2021/07/16/8-1626444967.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=GfgGn4dNuKZexy1BGkAUNA">
+<script>
+    function check() {
+        let img = document.getElementById("image")
+        img.style.left = parseInt(img.style.left) + 15 + "px"
+        let x = window.innerWidth - parseInt(img.style.left)
+        console.log(x)
+        if (parseInt(img.style.left) > x) {
+            img.style.left = 0 + "px"
+        }
+        // console.log(new Date().getMilliseconds())
+        // setTimeout(check, 50)
+        window.requestAnimationFrame(check)
+    }
+    check()
+    // alert(new Date())
+</script>
+</body>
+</html>

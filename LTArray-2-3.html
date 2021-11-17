@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = 1
+    let string = "a"
+    let string1 = parseInt(string)
+
+    console.log(typeof number) //number
+    console.log(isNaN(number)) //false
+    console.log(typeof string1) //number
+    console.log(isNaN(string1)) //true
+
+    let input = parseInt(prompt("Nhập"))
+    if (typeof input === "number") {
+        alert("Là số")
+    } else {
+        alert("Là chữ")
+    }
+
+    // if (input > 10 || input <= 10) {
+    //     alert("Là số")
+    // } else {
+    //     alert("Là chữ")
+    // }
+</script>
+</body>
+</html>
